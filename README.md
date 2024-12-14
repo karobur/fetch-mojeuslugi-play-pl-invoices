@@ -12,7 +12,7 @@ Fetch invoices from mojeuslugi.play.pl and saves them as PDF files
 options:
   -h, --help           show this help message and exit
   --base-url BASE_URL  base URL for mojeuslugi.play.pl API, default is https://mojeuslugi.play.pl
-  --token TOKEN        for mojeuslugi.play.pl API
+  --token TOKEN        user tohen for mojeuslugi.play.pl API
   --amount AMOUNT      amount of bills to fetch, default is 17
   --output OUTPUT      output directory, default is relative directorty invoices/
 ```
