@@ -12,7 +12,7 @@ parser.add_argument(
     help="base URL for mojeuslugi.play.pl API, default is https://mojeuslugi.play.pl",
     default="https://mojeuslugi.play.pl",
 )
-parser.add_argument("--token", required=True, help="for mojeuslugi.play.pl API")
+parser.add_argument("--token", required=True, help="user tohen for mojeuslugi.play.pl API")
 parser.add_argument(
     "--amount", required=False, help="amount of bills to fetch, default is 17", default=17
 )
