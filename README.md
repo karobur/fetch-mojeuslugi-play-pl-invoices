@@ -11,10 +11,10 @@ Fetch invoices from mojeuslugi.play.pl and saves them as PDF files
 
 options:
   -h, --help           show this help message and exit
-  --base-url BASE_URL  Base URL for mojeuslugi.play.pl API
-  --token TOKEN        Your JWT for mojeuslugi.play.pl API
-  --amount AMOUNT      Amount of bills to fetch
-  --output OUTPUT      Output directory
+  --base-url BASE_URL  base URL for mojeuslugi.play.pl API, default is https://mojeuslugi.play.pl
+  --token TOKEN        for mojeuslugi.play.pl API
+  --amount AMOUNT      amount of bills to fetch, default is 17
+  --output OUTPUT      output directory, default is relative directorty invoices/
 ```
 
 1. Install required Python version from `.python-version` file

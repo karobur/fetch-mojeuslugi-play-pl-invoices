@@ -9,12 +9,19 @@ parser = argparse.ArgumentParser(
 parser.add_argument(
     "--base-url",
     required=False,
-    help="Base URL for mojeuslugi.play.pl API",
+    help="base URL for mojeuslugi.play.pl API, default is https://mojeuslugi.play.pl",
     default="https://mojeuslugi.play.pl",
 )
-parser.add_argument("--token", required=True, help="Your JWT for mojeuslugi.play.pl API")
-parser.add_argument("--amount", required=False, help="Amount of bills to fetch", default=17)
-parser.add_argument("--output", required=False, help="Output directory", default="invoices")
+parser.add_argument("--token", required=True, help="for mojeuslugi.play.pl API")
+parser.add_argument(
+    "--amount", required=False, help="amount of bills to fetch, default is 17", default=17
+)
+parser.add_argument(
+    "--output",
+    required=False,
+    help="output directory, default is relative directorty invoices/",
+    default="invoices",
+)
 
 args = parser.parse_args()
 base_url = args.base_url
